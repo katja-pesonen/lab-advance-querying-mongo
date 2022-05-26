@@ -26,8 +26,10 @@ projection: {name: 1, ipo: 1, _id: 0}
 
 
 ### 5. All the companies that have less than 1000 employees and have been founded before 2005. Order them by the number of employees and limit the search to 10 companies.
+
 query: {number_of_employees: {$lt: 5000} , founded_year: { $lt: 2005}}
 sort: { number_of_employees: 1}
+
 limit: 10
 
 
